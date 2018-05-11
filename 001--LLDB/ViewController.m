@@ -83,9 +83,20 @@ void test1(){
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
-    [self hankTest1:@"hank"];
-        Person * p1 = self.models.firstObject;
+//    [self hankTest1:@"hank"];
+//    Person * p1 = self.models.firstObject;
+//    p1.name = @"hah";
     
+//     Person * p1 = self.models.firstObject;
+    [self test2];
+}
+
+
+// 奔溃调试
+#pragma mark    奔溃调试
+-(void)test2{
+    NSLog(@"%@",self.models[5]);
+
 }
 
 
